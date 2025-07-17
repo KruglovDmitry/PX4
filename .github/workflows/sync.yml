@@ -1,0 +1,17 @@
+name: Sync with PX4 Upstream
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Раз в день
+  workflow_dispatch:  # Ручной запуск
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync upstream
+        run: |
+          git remote add upstream https://github.com/PX4/PX4-Autopilot.git
+          git fetch upstream
+          git checkout myproject
+          git merge upstream/main
+          git push origin myproject
