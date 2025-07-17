@@ -3,7 +3,7 @@ from pymavlink import mavutil # Needed for command message definitions
 import time
 import math
 import sys
-sys.path.insert(1, r'/home/dima/ardupilot/myproject/functions')
+sys.path.insert(1, r'/home/dima/PX4-Autopilot/myproject/functions')
 import connection
 
 # Set up option parsing to get connection string

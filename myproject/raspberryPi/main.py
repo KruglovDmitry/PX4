@@ -3,7 +3,7 @@ import math
 import time
 from pymavlink import mavutil
 
-sys.path.insert(1, r'/home/dima/Desktop/ArduPilot/ardupilot/myproject/functions')
+sys.path.insert(1, r'/home/dima/PX4-Autopilot/myproject/functions')
 from set_params import subscribe_ask
 from read_cmd import get_ask, handle_response
 from connection import getPort
@@ -31,7 +31,7 @@ set_mode(master, 'STABILIZE')
 armed = arm_copter(master)
 
 # Give the autopilot time to initialize
-time.sleep(2)  
+time.sleep(2)
 
 #Take Off
 if armed:

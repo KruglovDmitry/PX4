@@ -3,7 +3,7 @@ from dronekit import connect, VehicleMode, LocationGlobal, LocationGlobalRelativ
 from pymavlink import mavutil # Needed for command message definitions
 import time
 import math
-sys.path.insert(1, r'/home/dima/Desktop/ArduPilot/ardupilot/myproject/functions')
+sys.path.insert(1, r'/home/dima/PX4-Autopilot/myproject/functions')
 from connection import getPort
 
 # Create connection

@@ -1,7 +1,7 @@
 import sys
 import time
 from pymavlink import mavutil
-sys.path.insert(1, r'/home/dima/Desktop/ArduPilot/ardupilot/myproject/functions')
+sys.path.insert(1, r'/home/dima/PX4-Autopilot/myproject/functions')
 from connection import getPort
 from arm import arm_copter
 from change_mode import set_mode
@@ -18,7 +18,7 @@ master = mavutil.mavlink_connection(getPort('jetsonNano'), baud = baud_rate, wai
 # 'STABILIZE' - позволяет совершать ARM, который отключается через определенное время
 # 'ALT_HOLD' - при ARM вращает двигателями интенсивнее и не останавливает их, пока не поменять режим
 # 'ACRO' - ARM аналогично стабилизированному, но по факту нет стабилизации (акробатика)
-set_mode(master, 'GUIDED') 
+set_mode(master, 'GUIDED')
 
 # Arm
 arm_copter(master)
