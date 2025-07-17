@@ -97,3 +97,4 @@
 12. Активация виртуального окружения для jetsonNano (python 3.8 и YOLO)
 	- cd /home/dima/Desktop/ArduPilot/ardupilot/myproject				# Переходим в каталог проекта
 	- source ~/py38_env/bin/activate						# Активация (deactivate - деактивация)
+13. Обновление в моем репозитории PX4: git push myorigin myproject
